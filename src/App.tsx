@@ -5,12 +5,8 @@ import "./App.scss";
 import TodoForm from "./components/TodoForm";
 import TodoList from "./components/TodoList";
 import ToggleListButton from "./components/ToggleListButton";
+import Todo from "./components/Todo";
 
-export interface Todo {
-  id: number;
-  title: string;
-  completed: boolean;
-}
 
 const App: React.FC = () => {
   const [todos, setTodos] = useState<Todo[]>([]);
