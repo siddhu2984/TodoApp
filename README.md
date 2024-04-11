@@ -1,6 +1,6 @@
 # Todo App
 
-This is a simple Todo App built with React. It allows you to add, edit, delete, and mark todos as completed.
+This is a simple Todo App built with React. It allows you to add, edit, delete, and mark todos as completed. [Click here](https://coruscating-meerkat-6a9b52.netlify.app/) to open the deployed version and start managing your todos!
 
 ## Getting Started
 
