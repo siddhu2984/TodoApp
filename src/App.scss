@@ -1,0 +1,156 @@
+body {
+  background-image: url("brandi-redd-aJTiW00qqtI-unsplash.jpg");
+  font-family: "Roboto", sans-serif;
+
+  .app {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #3b3c3b;
+      font-family: "Pacifico", cursive;
+    }
+
+    .todo-form {
+      display: flex;
+      margin-bottom: 20px;
+
+      input {
+        flex: 1;
+        padding: 10px;
+        margin-right: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      button {
+        padding: 10px 20px;
+        background-color: #3d4839;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    }
+
+    .slider {
+      text-align: center;
+      margin-bottom: 20px;
+
+      button {
+        padding: 10px 20px;
+        background-color: #3d4839;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    }
+
+    .todo-container {
+      display: flex;
+      flex-direction: column;
+
+      .todo-list,
+      .completed-list {
+        width: 100%;
+        margin-bottom: 20px;
+
+        h2 {
+          margin-bottom: 10px;
+          color: #3b3c3b;
+          font-family: "Kalam", cursive;
+          font-weight: 400;
+          font-style: normal;
+        }
+
+        ul {
+          list-style-type: none;
+          padding: 0;
+
+          li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border: 1px solid #eee;
+            border-radius: 5px;
+            margin-bottom: 10px;
+
+            span {
+              flex: 1;
+              cursor: pointer;
+              font-family: "Kalam", cursive;
+              font-weight: 400;
+              font-style: normal;
+
+              &.completed {
+                text-decoration: line-through;
+              }
+            }
+
+            button {
+              padding: 5px 10px;
+              border-radius: 5px;
+              cursor: pointer;
+              background-color: rgb(252, 75, 75);
+              color: white;
+              border: none;
+              &:not(:last-child) {
+                margin-right: 10px;
+              }
+            }
+
+            input[type="checkbox"] {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+
+    @media (min-width: 768px) {
+      h1 {
+        font-size: 60px;
+      }
+
+      .todo-container h2 {
+        font-size: 40px;
+      }
+      .todo-container span {
+        font-size: 24px;
+      }
+      .todo-container button {
+        font-size: 17px;
+      }
+      .todo-form button {
+        font-size: 17px;
+      }
+      .slider button {
+        font-size: 17px;
+      }
+      .todo-form input {
+        font-size: 17px;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .todo-form {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .todo-form input {
+        width: 240px;
+        margin-bottom: 10px;
+      }
+
+      .todo-form button {
+        width: 90px;
+      }
+    }
+  }
+}
